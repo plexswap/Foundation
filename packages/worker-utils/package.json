@@ -1,0 +1,12 @@
+{
+  "name": "@plexswap/worker-utils",
+  "version": "2.0.1",
+  "scripts": {
+    "test": "vitest --run",
+    "publish": "pnpm publish --access public"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}

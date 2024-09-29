@@ -1,0 +1,16 @@
+compatibility_date = "2023-12-01"
+account_id = "31932759b012b123dc908d6fce8e734b"
+kv_namespaces = [
+  {binding = "FARMS", id = "78d321b2cad34d669e54996ee221bbd9", preview_id = "73107c111395424c996ff46740388b4c"},
+]
+main = "src/index.ts"
+name = "farms"
+node_compat = true
+[vars]
+FORCE_UPDATE_KEY = "force"
+KV_CACHE = true
+[triggers]
+crons = ["0 */1 * * *"]
+[observability]
+enabled = true
+

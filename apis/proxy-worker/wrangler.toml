@@ -1,0 +1,7 @@
+compatibility_date = "2024-09-16"
+main = "src/index.ts"
+name = "proxy"
+node_compat = true
+[observability]
+enabled = true
+
