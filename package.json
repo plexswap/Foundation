@@ -1,6 +1,6 @@
 {
-  "name": "plexswap-frontend",
-  "version": "1.1.4",
+  "name": "@plexswap/foundation",
+  "version": "2.0.1",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -35,7 +35,7 @@
     "version-packages": "changeset version && pnpm i --lockfile-only",
     "release-packages": "turbo run build --filter=./packages/* && changeset version && changeset publish",
     "prepare": "husky install"
-},
+  },
   "engines": {
     "node": ">=18.20.0"
   },
@@ -72,5 +72,12 @@
     "encoding": "^0.1.13",
     "ws": "^8.13.0",
     "zod": "^3.22.3"
-  }
+  },
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/d79922c6-8620-4246-bf59-79086020555e/deploy-status)](https://app.netlify.com/sites/plexswap/deploys)",
+  "main": ".stylelintrc.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "author": "Symplexia Labs",
+  "license": "MIT"
 }

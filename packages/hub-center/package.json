@@ -1,6 +1,6 @@
 {
   "name": "@plexswap/hub-center",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "🛠 An SDK for building applications on top of Plexswap.",
   "main": "dist/base.js",
   "module": "dist/base.mjs",
