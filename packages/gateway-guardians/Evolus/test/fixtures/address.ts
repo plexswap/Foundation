@@ -14,7 +14,7 @@ import { getEvolusRouterAddress } from './../../constants'
 import { Provider } from './clients'
 import { BUSD, USDC, USDT, USDP, WBNB } from './constants/tokens'
 import { CorePool, ExtendedPool, PoolType, SmartRouter, StablePool } from './../../../Ananke'
-import { getPermit2Address } from '@plexswap/trade-sentinels/Licentia'
+import { getPermit2Address } from '@plexswap/hub-center/Licentia'
 
 const fixtureTokensAddresses = (chainId: ChainId) => {
   return {

@@ -1,4 +1,4 @@
-import { getPermit2Address } from "@plexswap/trade-sentinels/Licentia"
+import { getPermit2Address } from "@plexswap/hub-center/Licentia"
 import { Currency, CurrencyAmount, Token } from '@plexswap/sdk-core'
 import { Permit2Signature } from "@plexswap/gateway-guardians/Evolus"
 import { QueryObserverResult } from '@tanstack/react-query'

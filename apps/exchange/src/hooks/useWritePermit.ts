@@ -1,4 +1,4 @@
-import { AllowanceTransfer, Permit, generatePermitTypedData, getPermit2Address } from "@plexswap/trade-sentinels/Licentia"
+import { AllowanceTransfer, Permit, generatePermitTypedData, getPermit2Address } from "@plexswap/hub-center/Licentia"
 import { Token } from '@plexswap/sdk-core'
 import { Permit2Signature } from "@plexswap/gateway-guardians/Evolus"
 import { useCallback } from 'react'

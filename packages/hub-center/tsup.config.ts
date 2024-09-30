@@ -3,8 +3,10 @@ import { defineConfig } from 'tsup'
 
 export default defineConfig((options) => ({
   entry: {
-           'Hermes':    'Hermes/index.ts',
-           'Valorus':   'Valorus/index.ts',
+    base: 'base/index.ts',
+           'config':    'config/index.ts',
+           'Aegis':     'Aegis/index.ts',
+           'Licentia':  'Licentia/index.ts',
   },
   format: ['esm', 'cjs'],
   skipNodeModulesBundle: true,

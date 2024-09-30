@@ -1,5 +1,5 @@
 {
-  "name": "@plexswap/trade-sentinels",
+  "name": "@plexswap/hub-center",
   "version": "3.0.3",
   "description": "🛠 An SDK for building applications on top of Plexswap.",
   "main": "dist/base.js",
@@ -15,15 +15,20 @@
       "import": "./dist/base.mjs",
       "require": "./dist/base.js"
     },
-    "./Hermes": {
-      "types": "./dist/Hermes/index.d.ts",
-      "import": "./dist/Hermes.mjs",
-      "require": "./dist/Hermes.js"
+    "./base": {
+      "types": "./dist/base/index.d.ts",
+      "import": "./dist/base.mjs",
+      "require": "./dist/base.js"
     },
-    "./Valorus": {
-      "types": "./dist/Valorus/index.d.ts",
-      "import": "./dist/Valorus.mjs",
-      "require": "./dist/Valorus.js"
+    "./Aegis": {
+      "types": "./dist/Aegis/index.d.ts",
+      "import": "./dist/Aegis.mjs",
+      "require": "./dist/Aegis.js"
+    },
+    "./Licentia": {
+      "types": "./dist/Licentia/index.d.ts",
+      "import": "./dist/Licentia.mjs",
+      "require": "./dist/Licentia.js"
     }
   },
   "repository": {
@@ -54,8 +59,6 @@
   "dependencies": {
     "@plexswap/chains": "workspace:*",
     "@plexswap/sdk-core": "workspace:*",
-    "@plexswap/gateway-guardians": "workspace:*",
-    "@plexswap/hub-center": "workspace:*",
     "@plexswap/sdk-extended": "workspace:*",
     "@plexswap/metalists": "workspace:*",
     "abitype": "^0.9.8",

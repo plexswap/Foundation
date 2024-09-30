@@ -1,4 +1,4 @@
-import { SignatureTransfer, Permit2ABI as permit2Abi } from "./../../Licentia"
+import { SignatureTransfer, Permit2ABI as permit2Abi } from "@plexswap/hub-center/Licentia"
 import {
     getContract,
     recoverAddress,

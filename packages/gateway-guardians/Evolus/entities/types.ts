@@ -1,4 +1,4 @@
-import { PermitSingle } from '@plexswap/trade-sentinels/Licentia'
+import { PermitSingle } from '@plexswap/hub-center/Licentia'
 import { BigintIsh } from '@plexswap/sdk-core'
 import { Address } from 'viem'
 import { SwapOptions } from './../../Ananke'

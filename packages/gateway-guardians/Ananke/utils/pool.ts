@@ -3,7 +3,7 @@ import tryParseAmount from '@plexswap/utils/tryParseAmount'
 import { Pool as SDKExtendedPool, computePoolAddress } from '@plexswap/sdk-extended'
 import memoize from 'lodash/memoize.js'
 import { Address } from 'viem'
-import { getSwapOutput } from '@plexswap/trade-sentinels/Aegis'
+import { getSwapOutput } from '@plexswap/hub-center/Aegis'
 
 import { ExtendedPool, Pool, PoolType, StablePool, CorePool } from '../types'
 

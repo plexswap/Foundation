@@ -1,6 +1,6 @@
 import { PositionDetails } from '@plexswap/farms'
 import { useTranslation } from '@plexswap/localization'
-import { isStableSwapSupported } from '@plexswap/trade-sentinels/Aegis'
+import { isStableSwapSupported } from '@plexswap/hub-center/Aegis'
 import {
     AddIcon,
     Button,

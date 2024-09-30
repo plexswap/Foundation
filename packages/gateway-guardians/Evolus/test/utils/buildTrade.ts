@@ -1,6 +1,6 @@
 import { Currency, CurrencyAmount, ERC20Token, Native, Pair, TradeType, Trade as CoreTrade } from '@plexswap/sdk-core'
 import { Trade as ExtendedTrade, Pool } from '@plexswap/sdk-extended'
-import { getSwapOutput } from '@plexswap/trade-sentinels/Aegis'
+import { getSwapOutput } from '@plexswap/hub-center/Aegis'
 import { CorePool, ExtendedPool, RouteType, 
          SmartRouter, SmartRouterTrade, StablePool } from './../../../Ananke'
 import { convertPairToCorePool, convertPoolToExtendedPool } from '../fixtures/address'

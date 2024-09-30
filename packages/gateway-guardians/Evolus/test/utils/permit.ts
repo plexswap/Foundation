@@ -1,7 +1,7 @@
 import { type Address } from 'viem'
 import { MaxAllowanceExpiration, 
          MaxAllowanceTransferAmount, 
-         PermitSingle } from '@plexswap/trade-sentinels/Licentia'
+         PermitSingle } from '@plexswap/hub-center/Licentia'
 
 
 const TEST_DEADLINE = MaxAllowanceExpiration

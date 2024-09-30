@@ -55,6 +55,7 @@
     "@plexswap/sdk-extended": "workspace:*",
     "@plexswap/gateway-guardians": "workspace:*",
     "@plexswap/trade-sentinels": "workspace:*",
+    "@plexswap/hub-center": "workspace:*",
     "@plexswap/tokens": "workspace:*",
     "@plexswap/ui-plex": "workspace:*",
     "@plexswap/utils": "workspace:*",

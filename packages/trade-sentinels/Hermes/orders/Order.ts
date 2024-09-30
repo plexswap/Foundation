@@ -1,4 +1,4 @@
-import type { PermitTransferFrom, PermitTransferFromData, Witness } from "./../../Licentia"
+import type { PermitTransferFrom, PermitTransferFromData, Witness } from "@plexswap/hub-center/Licentia"
 import type { Address, Hex } from 'viem'
 import type { XSupportedChainId } from '../constants'
 

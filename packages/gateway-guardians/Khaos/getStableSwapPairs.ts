@@ -2,7 +2,7 @@ import { ChainId } from '@plexswap/chains'
 import { deserializeToken } from '@plexswap/metalists'
 import { CurrencyAmount } from '@plexswap/sdk-core'
 import fromPairs_ from 'lodash/fromPairs.js'
-import { getStableSwapPools, STABLE_SUPPORTED_CHAIN_IDS } from '@plexswap/trade-sentinels/Aegis'
+import { getStableSwapPools, STABLE_SUPPORTED_CHAIN_IDS } from '@plexswap/hub-center/Aegis'
 import { createStableSwapPair } from './stableSwap'
 import { StableSwapPair } from './types'
 

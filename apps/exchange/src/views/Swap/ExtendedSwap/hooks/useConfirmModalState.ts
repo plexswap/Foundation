@@ -1,6 +1,6 @@
 import { usePreviousValue } from '@plexswap/hooks'
 import { useTranslation } from '@plexswap/localization'
-import { getPermit2Address } from "@plexswap/trade-sentinels/Licentia"
+import { getPermit2Address } from "@plexswap/hub-center/Licentia"
 import { SmartRouterTrade } from '@plexswap/gateway-guardians/Ananke'
 import { Currency, CurrencyAmount, Percent, Token, TradeType } from '@plexswap/sdk-core'
 import { Permit2Signature } from "@plexswap/gateway-guardians/Evolus"

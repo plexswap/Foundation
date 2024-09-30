@@ -1,4 +1,4 @@
-import { StableSwap } from '@plexswap/trade-sentinels'
+import { StableSwap } from '@plexswap/hub-center'
 import { Currency, CurrencyAmount, Price } from '@plexswap/sdk-core'
 import tryParseAmount from '@plexswap/utils/tryParseAmount'
 import { useContext, useMemo } from 'react'

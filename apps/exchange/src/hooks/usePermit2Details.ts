@@ -1,4 +1,4 @@
-import { Permit2ABI, getPermit2Address } from "@plexswap/trade-sentinels/Licentia"
+import { Permit2ABI, getPermit2Address } from "@plexswap/hub-center/Licentia"
 import { CurrencyAmount, Token } from '@plexswap/sdk-core'
 import { useQuery } from '@tanstack/react-query'
 import { FAST_INTERVAL } from 'config/constants'

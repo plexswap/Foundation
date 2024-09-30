@@ -3,7 +3,7 @@ import {
     type PermitTransferFrom,
     type PermitTransferFromData,
     type Witness,
-} from "./../../Licentia"
+} from "@plexswap/hub-center/Licentia"
 import { decodeAbiParameters, encodeAbiParameters, parseAbiParameters, type Address, type Hex } from 'viem'
 import { PERMIT2_MAPPING, type XSupportedChainId } from '../constants'
 import { MissingConfiguration } from '../errors'

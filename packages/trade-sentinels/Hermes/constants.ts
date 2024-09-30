@@ -1,5 +1,5 @@
 import { ChainId } from '@plexswap/chains'
-import { getPermit2Address } from "./../Licentia"
+import { getPermit2Address } from "@plexswap/hub-center/Licentia"
 import type { Address } from 'viem'
 
 export const SupportedChainId = [ChainId.BSC, ChainId.BSC_TESTNET] as const

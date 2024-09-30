@@ -1,4 +1,4 @@
-import { getPermit2Address } from "@plexswap/trade-sentinels/Licentia"
+import { getPermit2Address } from "@plexswap/hub-center/Licentia"
 import { Currency, Token } from '@plexswap/sdk-core'
 import { Address } from 'viem'
 import { useActiveChainId } from './useActiveChainId'

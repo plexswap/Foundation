@@ -1,6 +1,6 @@
 import { Currency, CurrencyAmount, Pair, ZERO } from '@plexswap/sdk-core'
 import { Pool as ExtendedPool, TickList } from '@plexswap/sdk-extended'
-import { getQuoteExactIn, getQuoteExactOut } from '@plexswap/trade-sentinels/Aegis'
+import { getQuoteExactIn, getQuoteExactOut } from '@plexswap/hub-center/Aegis'
 import {
     ExtendedPool as IExtendedPool,
     Pool as IPool,

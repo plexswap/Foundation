@@ -1,6 +1,6 @@
 {
   "extends": "@plexswap/tsconfig/base",
-  "include": ["Hermes", "Valorus"],
+  "include": ["config", "base", "Aegis", "Licentia"],
   "exclude": ["**/*.test.ts", "./dist/**"],
   "compilerOptions": {
     "outDir": "./dist",
