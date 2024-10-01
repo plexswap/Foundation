@@ -1,6 +1,6 @@
 {
   "name": "@plexswap/farms",
-  "version": "3.1.2",
+  "version": "3.1.3",
   "sideEffects": false,
   "description": "Plexswap Farms Package",
   "main": "src/index.ts",

@@ -1,6 +1,6 @@
 {
   "name": "@plexswap/eslint-config",
-  "version": "3.1.2",
+  "version": "3.1.3",
   "description": "Eslint config for PlexSwap",
   "main": "lib/index.js",
   "files": [
