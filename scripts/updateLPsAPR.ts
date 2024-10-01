@@ -231,7 +231,7 @@ let logged = false
 export const getFarmConfig = async (chainId: ChainId) => {
   const chainName = getChainName(chainId)
   try {
-    return (await import(`../packages/farms/constants/${chainName}`)).default.filter(
+    return (await import(`../packages/farms/config/${chainName}`)).default.filter(
       (f: SerializedFarmConfig) => f.pid !== null,
     ) as SerializedFarmConfig[]
   } catch (error) {

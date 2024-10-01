@@ -1,6 +1,6 @@
 {
   "name": "@plexswap/next-config",
-  "version": "1.0.2",
+  "version": "3.1.2",
   "sideEffects": false,
   "private": true,
   "type": "module",
