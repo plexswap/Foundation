@@ -23,6 +23,7 @@
   "private": true,
   "scripts": {
     "dev": "wrangler dev",
-    "publish:wrangler": "wrangler publish"
+    "publish:wrangler": "wrangler publish --name pools",
+    "publish:wrangler-dev": "wrangler publish --name pools --config wrangler_dev.toml"
   }
 }

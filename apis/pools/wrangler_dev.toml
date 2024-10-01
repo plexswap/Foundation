@@ -1,7 +1,7 @@
 compatibility_date = "2024-09-16"
-account_id = "31932759b012b123dc908d6fce8e734b"
+account_id = "e4754c844bf7e2129cabfd3f358faf42"
 kv_namespaces = [
-  {binding = "POOLS", id = "1dcba66221044735801aa09e93557de7"},
+  {binding = "POOLS", id = "d402d03f39e040f6a39368027f453412"},
 ]
 r2_buckets = [
   { binding = "SUBGRAPH_POOLS", bucket_name = "subgraph-pools", preview_bucket_name = "subgraph-pools-dev" }

@@ -92,7 +92,7 @@ export const getTotalTvl = async () => {
     const stableTvl = await getStableTvl(stableProdClients.map(({ client }) => client))
     const coreTvl = await getCoreTvl(coreProdClients.map(({ client }) => client))
 
-    const waya = await (await fetch('https://farms-api.plexswap.com/price/waya')).json()
+    const waya = await (await fetch('https://farms-api.plexfinance.us/price/waya')).json()
     const wayaVaultCore = getWayaVaultAddress()
     const wayaContract = getWayaContract()
     const totalWayaInVault = await wayaContract.read.balanceOf([wayaVaultCore])

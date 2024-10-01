@@ -61,3 +61,4 @@ scripts/dev/**
 
 #npm
 .npmrc
+.dev.vars

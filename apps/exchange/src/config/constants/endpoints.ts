@@ -46,7 +46,7 @@ export const MERCURYO_WIDGET_URL =
     : 'https://widget.mercuryo.io/embed.2.0.js'
 
 export const INFO_CLIENT_WITH_CHAIN = {
-      [ChainId.BSC]: 'https://proxy.plexswap-apis.workers.dev/bsc-exchange',
+      [ChainId.BSC]: 'https://proxy-api.plexfinance.us/bsc-exchange',
 }
     
 export const CORE_SUBGRAPH_URLS = {

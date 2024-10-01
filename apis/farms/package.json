@@ -27,7 +27,7 @@
   "private": true,
   "scripts": {
     "dev": "wrangler dev --config wrangler_dev.toml",
-    "publish:wrangler-sup": "wrangler publish --name farms --config wrangler_sup.toml",
+    "publish:wrangler": "wrangler publish --name farms",
     "publish:wrangler-dev": "wrangler publish --name farms --config wrangler_dev.toml"
   }
 }

@@ -95,7 +95,7 @@ const createFallbackTvlRefGetter = () => {
       return cached
     }
     // LOOKUP //
-    const res = await fetch(`https://pools.plexswap-apis.workers.dev/v0/extended-pools-tvl/${currencyA.chainId}`)
+    const res = await fetch(`https://pools-api.plexfinance.us/v0/extended-pools-tvl/${currencyA.chainId}`)
     const refs: ExtendedPoolTvlReference[] = await res.json()
     cache.set(currencyA.chainId, refs)
     return refs
