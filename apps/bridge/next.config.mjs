@@ -7,15 +7,14 @@ const withVanillaExtract = createVanillaExtractPlugin()
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    transpilePackages: [
+  transpilePackages: [
       '@plexswap/ui-plex',
       '@plexswap/style',
       '@plexswap/hooks',
       '@plexswap/localization',
       '@plexswap/utils',
-    ],
-  },
+  ],
+
   compiler: {
     styledComponents: true,
   },

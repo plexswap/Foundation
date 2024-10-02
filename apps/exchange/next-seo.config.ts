@@ -14,6 +14,6 @@ export const SEO: DefaultSeoProps = {
     title: 'PlexSwap - A simple and consistent DeFi Exchange approach on BNB Smart Chain (BSC)',
     description:
       'Earn WAYA through yield farming, then stake it in Crop Silos to earn more tokens! Initial Farm Offerings (new token launch model pioneered by PlexSwap), NFTs, and more, on a platform you can trust.',
-    images: [{ url: 'https://swap.plexfinance.us/images/Where_the_Crops_Begin.png' }],
+    images: [{ url: 'https://assets.plexfinance.us/images/mix/Where_the_Crops_Begin.png' }],
   },
 }

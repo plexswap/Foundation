@@ -6,7 +6,7 @@ export const DEFAULT_META: PageMeta = {
   title: 'PlexSwap',
   description:
     'Earn WAYA through yield farming, then stake it in Crop Silos to earn more tokens! Initial Farm Offerings (new token launch model pioneered by PlexSwap), NFTs, and more, on a platform you can trust.',
-  image: "https://swap.plexfinance.us/images/Where_the_Crops_Begin.png",
+  image: "https://assets.plexfinance.us/images/mix/Where_the_Crops_Begin.png",
 }
 
 interface PathList {
