@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import BundleAnalyzer from '@next/bundle-analyzer'
 import { withWebSecurityHeaders } from '@plexswap/next-config/withWebSecurityHeaders'
-import smartRouterPkgs from '@plexswap/gateway-guardians/package.json' // with { type: 'json' }
+import smartRouterPkgs from '@plexswap/gateway-guardians/package.json' with { type: 'json' }
 import { withSentryConfig } from '@sentry/nextjs'
 import { createVanillaExtractPlugin } from '@vanilla-extract/next-plugin'
 import vercelToolbarPlugin from '@vercel/toolbar/plugins/next'
