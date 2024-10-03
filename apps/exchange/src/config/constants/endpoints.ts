@@ -1,6 +1,6 @@
 import { ChainId, BLOCKS_SUBGRAPHS, EXTENDED_SUBGRAPHS, STABLESWAP_SUBGRAPHS, CORE_SUBGRAPHS } from '@plexswap/chains'
 
-import { ASSETS_PLEX } from '@plexswap/ui-plex'
+export const ASSET_CDN = 'https://assets.plexfinance.us';
 
 export const SNAPSHOT_BASE_URL = process.env.NEXT_PUBLIC_SNAPSHOT_BASE_URL
 export const SNAPSHOT_API = `${SNAPSHOT_BASE_URL}/graphql`
@@ -31,8 +31,6 @@ export const MOONPAY_BASE_URL = 'https://api.moonpay.com'
 export const ACCESS_RISK_API = 'https://red.alert.plexswap.com/red-api'
 
 export const CELER_API = 'https://api.celerscan.com/scan'
-
-export const ASSET_CDN = ASSETS_PLEX
 
 export const MERCURYO_WIDGET_ID = process.env.NEXT_PUBLIC_MERCURYO_WIDGET_ID || '64d1f9f9-85ee-4558-8168-1dc0e7057ce6'
 

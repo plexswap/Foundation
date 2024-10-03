@@ -4,7 +4,8 @@ import { bscTokens } from "@plexswap/tokens";
 import memoize from "lodash/memoize";
 import { getAddress } from "viem";
 import { CurrencyInfo } from "./types";
-import { ASSETS_PLEX } from "@plexswap/ui-plex";
+
+export const ASSET_CDN = 'https://assets.plexfinance.us';
 
 const mapping: { [key: number]: string } = {
   [ChainId.BSC]: "smartchain",
@@ -40,7 +41,7 @@ const chainName: { [key: number]: string } = {
 
 export const getTokenListTokenUrl = (token: Pick<Token, "chainId" | "address">) =>
   Object.keys(chainName).includes(String(token.chainId))
-    ? `${ASSETS_PLEX}/images/tokens/${`${getChainName(token.chainId)}/`}${token.address}.png`
+    ? `${ASSET_CDN}/images/tokens/${`${getChainName(token.chainId)}/`}${token.address}.png`
     : null;
 
 const commonCurrencySymbols = [bscTokens.waya, NATIVE[ChainId.BSC], bscTokens.busd].map(({ symbol }) => symbol);
@@ -54,7 +55,7 @@ export const getCommonCurrencyUrlBySymbol = memoize(
   (symbol?: string): string | undefined =>
     symbol && commonCurrencySymbols.includes(symbol)
       ? 
-      `${ASSETS_PLEX}/images/tokens/common/${symbol.toLocaleLowerCase()}.png`
+      `${ASSET_CDN}/images/tokens/common/${symbol.toLocaleLowerCase()}.png`
       : undefined,
   (symbol?: string) => `logoUrls#symbol#${symbol}`
 );

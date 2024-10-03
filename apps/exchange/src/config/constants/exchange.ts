@@ -4,9 +4,9 @@ import { plexchainTokens, bscTokens, bscTestnetTokens, WAYA_BSC } from '@plexswa
 import { ChainTokenList } from './types'
 
 export {
-  ADDITIONAL_BASES, BASES_TO_CHECK_TRADES_AGAINST,
-  CUSTOM_BASES, ROUTER_ADDRESS
-} from '@plexswap/gateway-guardians/config'
+  ADDITIONAL_BASES, 
+  BASES_TO_CHECK_TRADES_AGAINST,
+  CUSTOM_BASES, ROUTER_ADDRESS } from '@plexswap/gateway-guardians/config'
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {

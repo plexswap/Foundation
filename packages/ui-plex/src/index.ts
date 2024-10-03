@@ -31,5 +31,3 @@ export { default as getPortalRoot } from "./util/getPortalRoot";
 
 // Providers
 export * from "./Providers";
-
-export const ASSETS_PLEX = "https://assets.plexfinance.us";
