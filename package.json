@@ -69,8 +69,6 @@
     "pnpm": "9.8.0"
   },
   "dependencies": {
-    "encoding": "^0.1.13",
-    "netlify-cli": "^17.36.4",
     "ws": "^8.13.0",
     "zod": "^3.22.3"
   }
