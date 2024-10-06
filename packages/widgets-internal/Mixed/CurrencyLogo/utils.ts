@@ -43,7 +43,7 @@ const chainName: { [key: number]: string } = {
 
 export const getTokenListTokenUrl = (token: Pick<Token, "chainId" | "address">) =>
   Object.keys(chainName).includes(String(token.chainId))
-    ? `https://metalists.plexfinance.us/images/${`${getChainName(token.chainId)}/`}${token.address}.png`
+    ? `https://metalists.plexfinance.us/images/${`${getChainName(token.chainId)?.toLowerCase()}/`}${token.address}.png`
     : null;
 
 const commonCurrencySymbols = [bscTokens.waya, NATIVE[ChainId.BSC], bscTokens.busd].map(({ symbol }) => symbol);
