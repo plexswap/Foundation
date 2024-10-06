@@ -19,7 +19,6 @@ import { useCallback, useMemo, useState } from 'react'
 import { styled } from 'styled-components'
 import { BIG_ZERO } from '@plexswap/utils/bigNumber'
 import { useTranslation } from '@plexswap/localization'
-import { getChainName } from "@plexswap/chains";
 import { useAppDispatch } from 'state'
 import { useAccount } from 'wagmi'
 import { Token } from '@plexswap/sdk-core'
@@ -40,7 +39,6 @@ import { fetchWayaVaultUserData } from 'state/pools'
 import { useVaultPoolByKey } from 'state/pools/hooks'
 import { useCheckVaultApprovalStatus, useVaultApprove } from 'views/Pools/hooks/useApprove'
 import useWithdrawalFeeTimer from 'views/Pools/hooks/useWithdrawalFeeTimer'
-import { ASSET_CDN } from 'config/constants/endpoints'
 import { MIN_LOCK_AMOUNT, convertWayaToShares } from '../../helpers'
 import { VaultRoiCalculatorModal } from '../Vault/VaultRoiCalculatorModal'
 import FeeSummary from './FeeSummary'
@@ -248,7 +246,7 @@ const VaultStakeModal: React.FC<React.PropsWithChildren<VaultStakeModalProps>> =
       <Flex alignItems="center" justifyContent="space-between" mb="8px">
         <Text bold>{isRemovingStake ? t('Unstake') : t('Stake')}:</Text>
         <Flex alignItems="center" minWidth="70px">
-          <Image src={`${ASSET_CDN}/images/tokens/${`${getChainName(chainId)}/`}${stakingToken.address}.png`} width={24} height={24} alt={stakingToken.symbol} />
+        <Image src={`/images/tokens/${stakingToken.address}.png`} width={24} height={24} alt={stakingToken.symbol} />
           <Text ml="4px" bold>
             {stakingToken.symbol}
           </Text>

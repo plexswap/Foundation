@@ -66,6 +66,7 @@ const config = {
     '@plexswap/hooks',
     '@plexswap/utils',
     '@plexswap/widgets-internal',
+    '@plexswap/ui-plex',
     '@tanstack/query-core',
   ],
   reactStrictMode: true,
@@ -75,7 +76,7 @@ const config = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'static-nft.plexswap.com',
+        hostname: 'static-nft.plexfinance.us',
         pathname: '/mainnet/**',
       },
       {
@@ -172,6 +173,16 @@ const config = {
         source: '/crop',
         destination: '/pools',
         permanent: true,
+      },
+      {
+        source: '/api/extended/:chainId/farms/liquidity/:address',
+        destination: 'https://farms-api.plexfinance.us/extended/:chainId/liquidity/:address',
+        permanent: false,
+      },
+      {
+        source: '/images/tokens/:address',
+        destination: 'https://metalists.plexfinance.us/images/bsc/:address',
+        permanent: false,
       },
     ]
   },

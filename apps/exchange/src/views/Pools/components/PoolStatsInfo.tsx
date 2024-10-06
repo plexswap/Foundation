@@ -14,7 +14,6 @@ import { useVaultPoolByKey } from 'state/pools/hooks'
 import { getBlockExploreLink } from 'utils'
 import { getVaultPoolAddress } from 'utils/addressHelpers'
 import { getPoolBlockInfo } from 'views/Pools/helpers'
-import { ASSET_CDN } from 'config/constants/endpoints'
 import MaxStakeRow from './MaxStakeRow'
 import { AprInfo, DurationAvg, TotalLocked } from './Stat'
 
@@ -150,7 +149,7 @@ const PoolStatsInfo: React.FC<React.PropsWithChildren<ExpandedFooterProps>> = ({
             tokenAddress={tokenAddress}
             tokenSymbol={earningToken.symbol}
             tokenDecimals={earningToken.decimals}
-            tokenLogo={`${ASSET_CDN}/images/tokens/${`${getChainName(chainId)}/`}${tokenAddress}.png`}
+            tokenLogo={`https://metalists.plexfinance.us/images/${`${getChainName(chainId)}/`}${tokenAddress}.png`}
           />
         </Flex>
       )}

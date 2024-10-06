@@ -1,12 +1,10 @@
 import { useTranslation } from '@plexswap/localization'
-import { getChainName } from '@plexswap/chains'
 import { BalanceInput, Button, Flex, Image, Slider, Text } from '@plexswap/ui-plex'
 import { getFullDisplayBalance } from '@plexswap/utils/formatBalance'
 import { getFullDecimalMultiplier } from '@plexswap/utils/getFullDecimalMultiplier'
 import BigNumber from 'bignumber.js'
 import { Dispatch, SetStateAction, memo, useCallback, useMemo } from 'react'
 import { styled } from 'styled-components'
-import { ASSET_CDN } from 'config/constants/endpoints'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import { useUserEnoughWayaValidator } from '../hooks/useUserEnoughWayaValidator'
 
@@ -79,7 +77,7 @@ const BalanceField: React.FC<React.PropsWithChildren<PropsType>> = ({
           {t('WAYA to lock')}
         </Text>
         <Flex alignItems="center" minWidth="70px">
-          <Image src={`${ASSET_CDN}/images/tokens/${`${getChainName(chainId)}/`}${stakingAddress}.png`} width={24} height={24} alt={stakingSymbol} />
+        <Image src={`/images/tokens/${stakingAddress}.png`} width={24} height={24} alt={stakingSymbol} />
           <Text ml="4px" bold>
             {stakingSymbol}
           </Text>

@@ -6,7 +6,6 @@ import { multiChainId, MultiChainName } from 'state/info/constant'
 import { styled } from 'styled-components'
 import { safeGetAddress } from 'utils'
 import { Address } from 'viem'
-import { ASSET_CDN } from 'config/constants/endpoints'
 
 const StyledLogo = styled(TokenLogo)<{ size: string }>`
   width: ${({ size }) => size};
@@ -32,7 +31,7 @@ export const CurrencyLogo: React.FC<
   const imagePath = `${chainName?.toLowerCase()}/`
   const checkedsummedAddress = safeGetAddress(address)
   const srcFromPCS = checkedsummedAddress
-    ? `${ASSET_CDN}/images/tokens/${imagePath}${checkedsummedAddress}.png`
+    ? `https://metalists.plexfinance.us/images/${imagePath}${checkedsummedAddress}.png`
     : ''
   return <StyledLogo size={size} srcs={src ? [srcFromPCS, src] : [srcFromPCS]} alt="token logo" useFilledIcon {...rest} />
 }

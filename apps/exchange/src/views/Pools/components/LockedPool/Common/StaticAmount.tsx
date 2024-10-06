@@ -1,9 +1,7 @@
 
 import { BalanceWithLoading, Box, Flex, Image, Text } from '@plexswap/ui-plex'
-import { getChainName } from '@plexswap/chains'
 import Divider from 'components/Divider'
 import { useTranslation } from '@plexswap/localization'
-import { ASSET_CDN } from 'config/constants/endpoints'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import { StaticAmountPropsType } from '../types'
 
@@ -34,7 +32,7 @@ const StaticAmount: React.FC<React.PropsWithChildren<StaticAmountPropsType>> = (
           />
         </Box>
         <Flex alignItems="center" minWidth="70px">
-          <Image src={`${ASSET_CDN}/images/tokens/${`${getChainName(chainId)}/`}${stakingAddress}.png`} width={24} height={24} alt={stakingSymbol} />
+        <Image src={`/images/tokens/${stakingAddress}.png`} width={24} height={24} alt={stakingSymbol} />
           <Text ml="4px" bold>
             {stakingSymbol}
           </Text>

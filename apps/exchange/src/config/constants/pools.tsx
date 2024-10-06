@@ -10,8 +10,8 @@ export const vaultPoolConfig = {
     autoCompoundFrequency: 5000,
     gasLimit: 380000n,
     tokenImage: {
-      primarySrc: `${ASSET_CDN}/images/tokens/bsc/${bscTokens.waya.address}.svg`,
-      secondarySrc: `${ASSET_CDN}/images/tokens/WayaToWaya.svg`,
+      primarySrc: `/images/tokens/bsc/${bscTokens.waya.address}.svg`,
+      secondarySrc: `/images/tokens/WayaToWaya.svg`,
     },
   },
   [VaultKey.WayaVault]: {
@@ -20,8 +20,8 @@ export const vaultPoolConfig = {
     autoCompoundFrequency: 5000,
     gasLimit: 1100000n,
     tokenImage: {
-      primarySrc: `${ASSET_CDN}/images/tokens/bsc/${bscTokens.waya.address}.svg`,
-      secondarySrc: `${ASSET_CDN}/images/tokens/WayaToWaya.svg`,
+      primarySrc: `/images/tokens/bsc/${bscTokens.waya.address}.svg`,
+      secondarySrc: `/images/tokens/WayaToWaya.svg`,
     },
   },
   [VaultKey.WayaFlexibleVault]: {
@@ -30,8 +30,8 @@ export const vaultPoolConfig = {
     autoCompoundFrequency: 5000,
     gasLimit: 500000n,
     tokenImage: {
-      primarySrc: `${ASSET_CDN}/images/tokens/bsc/${bscTokens.waya.address}.svg`,
-      secondarySrc: `${ASSET_CDN}/images/tokens/WayaToWaya.svg`,
+      primarySrc: `/images/tokens/bsc/${bscTokens.waya.address}.svg`,
+      secondarySrc: `/images/tokens/WayaToWaya.svg`,
     },
   },
 } as const

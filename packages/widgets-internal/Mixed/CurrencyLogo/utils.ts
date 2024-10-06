@@ -36,12 +36,14 @@ export const getTokenLogoURLByAddress = memoize(
 );
 
 const chainName: { [key: number]: string } = {
-  [ChainId.BSC]: "",
+  [ChainId.BSC]: "bsc",
+  [ChainId.BSC_TESTNET]: "bsctestnet",
+  [ChainId.PLEXCHAIN]:   "plexchain"
 };
 
 export const getTokenListTokenUrl = (token: Pick<Token, "chainId" | "address">) =>
   Object.keys(chainName).includes(String(token.chainId))
-    ? `${ASSET_CDN}/images/tokens/${`${getChainName(token.chainId)}/`}${token.address}.png`
+    ? `https://metalists.plexfinance.us/images/${`${getChainName(token.chainId)}/`}${token.address}.png`
     : null;
 
 const commonCurrencySymbols = [bscTokens.waya, NATIVE[ChainId.BSC], bscTokens.busd].map(({ symbol }) => symbol);
@@ -55,7 +57,7 @@ export const getCommonCurrencyUrlBySymbol = memoize(
   (symbol?: string): string | undefined =>
     symbol && commonCurrencySymbols.includes(symbol)
       ? 
-      `${ASSET_CDN}/images/tokens/common/${symbol.toLocaleLowerCase()}.png`
+      `https://metalists.plexfinance.us/images/symbol/${symbol.toLocaleLowerCase()}.png`
       : undefined,
   (symbol?: string) => `logoUrls#symbol#${symbol}`
 );

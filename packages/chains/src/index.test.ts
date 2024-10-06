@@ -10,7 +10,7 @@ test('exports', () => {
       "chainNameToChainId",
       "getChainName",
       "getChainIdByChainName",
-      "V2_SUBGRAPHS",
+      "CORE_SUBGRAPHS",
     ]
   `)
 })

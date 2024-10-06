@@ -79,7 +79,7 @@ export const TokenImages: React.FC<React.PropsWithChildren> = () => {
   return (
     <Flex flexWrap="wrap">
       {tokens.map((token) => {
-        const src = `https://assets.plexfinance.us/images/tokens/bsc/${token.address[56]}.png`;
+        const src = `https://metalists.plexfinance.us/images/bsc/${token.address[56]}.png`;
 
         return (
           <StyledBox key={token.symbol} p="16px">
@@ -100,8 +100,8 @@ export const TokenPairImages: React.FC<React.PropsWithChildren> = () => {
     <Flex flexWrap="wrap">
       {tokens.map((token) => {
         const randomTokenIndex = random(0, tokens.length - 1);
-        const primarySrc = `https://assets.plexfinance.us/images/tokens/bsc/${token.address[56]}.png`;
-        const secondarySrc = `https://assets.plexfinance.us/images/tokens/bsc/${tokens[randomTokenIndex].address[56]}.png`;
+        const primarySrc = `https://metalists.plexfinance.us/images/bsc/${token.address[56]}.png`;
+        const secondarySrc = `https://metalists.plexfinance.us/images/bsc/${tokens[randomTokenIndex].address[56]}.png`;
 
         return (
           <StyledBox key={token.symbol} p="16px">
