@@ -132,7 +132,7 @@ const config = {
         ],
       },
       {
-        source: '/images/tokens/:all*',
+        source: 'https://metalists.plexfinance.us/images/:all*',
         headers: [
           {
             key: 'Cache-Control',
@@ -180,7 +180,7 @@ const config = {
         permanent: false,
       },
       {
-        source: '/images/tokens/:address',
+        source: 'https://metalists.plexfinance.us/images/:address',
         destination: 'https://metalists.plexfinance.us/images/bsc/:address',
         permanent: false,
       },

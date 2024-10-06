@@ -1,7 +1,6 @@
 import Trans from 'components/Trans'
 import { VaultKey } from '@plexswap/pools'
 import { bscTokens } from '@plexswap/tokens'
-import { ASSET_CDN } from 'config/constants/endpoints'
 
 export const vaultPoolConfig = {
   [VaultKey.WayaVaultV1]: {
@@ -10,8 +9,8 @@ export const vaultPoolConfig = {
     autoCompoundFrequency: 5000,
     gasLimit: 380000n,
     tokenImage: {
-      primarySrc: `/images/tokens/bsc/${bscTokens.waya.address}.svg`,
-      secondarySrc: `/images/tokens/WayaToWaya.svg`,
+      primarySrc: `https://metalists.plexfinance.us/images/bsc/${bscTokens.waya.address}.svg`,
+      secondarySrc: `https://metalists.plexfinance.us/images/bsc/WayaToWaya.svg`,
     },
   },
   [VaultKey.WayaVault]: {
@@ -20,8 +19,8 @@ export const vaultPoolConfig = {
     autoCompoundFrequency: 5000,
     gasLimit: 1100000n,
     tokenImage: {
-      primarySrc: `/images/tokens/bsc/${bscTokens.waya.address}.svg`,
-      secondarySrc: `/images/tokens/WayaToWaya.svg`,
+      primarySrc: `https://metalists.plexfinance.us/images/bsc/${bscTokens.waya.address}.svg`,
+      secondarySrc: `https://metalists.plexfinance.us/images/bsc/WayaToWaya.svg`,
     },
   },
   [VaultKey.WayaFlexibleVault]: {
@@ -30,8 +29,8 @@ export const vaultPoolConfig = {
     autoCompoundFrequency: 5000,
     gasLimit: 500000n,
     tokenImage: {
-      primarySrc: `/images/tokens/bsc/${bscTokens.waya.address}.svg`,
-      secondarySrc: `/images/tokens/WayaToWaya.svg`,
+      primarySrc: `https://metalists.plexfinance.us/images/bsc/${bscTokens.waya.address}.svg`,
+      secondarySrc: `https://metalists.plexfinance.us/images/bsc/WayaToWaya.svg`,
     },
   },
 } as const

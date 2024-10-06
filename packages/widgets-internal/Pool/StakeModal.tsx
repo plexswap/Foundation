@@ -93,7 +93,7 @@ export const StakeModal: React.FC<React.PropsWithChildren<StakeModalProps>> = ({
   account,
   pendingTx,
   handleConfirmClick,
-  imageUrl = "/images/tokens/",
+  imageUrl = "https://metalists.plexfinance.us/images/",
   warning,
 }) => {
   const { t } = useTranslation();
