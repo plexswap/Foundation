@@ -10,7 +10,7 @@ export const vaultPoolConfig = {
     gasLimit: 380000n,
     tokenImage: {
       primarySrc: `https://metalists.plexfinance.us/images/bsc/${bscTokens.waya.address}.svg`,
-      secondarySrc: `https://metalists.plexfinance.us/images/bsc/WayaToWaya.svg`,
+      secondarySrc: `https://metalists.plexfinance.us/images/symbol/WayaToWaya.svg`,
     },
   },
   [VaultKey.WayaVault]: {
@@ -20,7 +20,7 @@ export const vaultPoolConfig = {
     gasLimit: 1100000n,
     tokenImage: {
       primarySrc: `https://metalists.plexfinance.us/images/bsc/${bscTokens.waya.address}.svg`,
-      secondarySrc: `https://metalists.plexfinance.us/images/bsc/WayaToWaya.svg`,
+      secondarySrc: `https://metalists.plexfinance.us/images/symbol/WayaToWaya.svg`,
     },
   },
   [VaultKey.WayaFlexibleVault]: {
@@ -30,7 +30,7 @@ export const vaultPoolConfig = {
     gasLimit: 500000n,
     tokenImage: {
       primarySrc: `https://metalists.plexfinance.us/images/bsc/${bscTokens.waya.address}.svg`,
-      secondarySrc: `https://metalists.plexfinance.us/images/bsc/WayaToWaya.svg`,
+      secondarySrc: `https://metalists.plexfinance.us/images/symbol/WayaToWaya.svg`,
     },
   },
 } as const
