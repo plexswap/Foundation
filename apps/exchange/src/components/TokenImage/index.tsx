@@ -20,7 +20,7 @@ export const getImageUrlFromToken = (token: Token) => {
 
   return token?.isNative && token.chainId !== ChainId.BSC
     ? `${ASSET_CDN}/images/native/${token.chainId}.png`
-    : `https://metalists.plexfinance.us/images/${`${getChainName(token.chainId)}/`}${address}.png`
+    : `https://metalists.plexfinance.us/images/${`${getChainName(token.chainId)?.toLowerCase()}/`}${address}.png`
 }
 
 export const TokenPairImage: React.FC<React.PropsWithChildren<TokenPairImageProps>> = ({

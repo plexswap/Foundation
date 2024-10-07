@@ -66,7 +66,7 @@ const StakeModalContainer = ({
   )
 
   const tokenImageUrl = useMemo(
-    () => (chainId ? `https://metalists.plexfinance.us/images/${getChainName(chainId)}/` : ''),
+    () => (chainId ? `https://metalists.plexfinance.us/images/${getChainName(chainId)?.toLowerCase()}/` : ''),
     
     [chainId],
   )

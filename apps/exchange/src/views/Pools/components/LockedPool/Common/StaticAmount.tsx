@@ -32,7 +32,7 @@ const StaticAmount: React.FC<React.PropsWithChildren<StaticAmountPropsType>> = (
           />
         </Box>
         <Flex alignItems="center" minWidth="70px">
-        <Image src={`https://metalists.plexfinance.us/images/${stakingAddress}.png`} width={24} height={24} alt={stakingSymbol} />
+        <Image src={`https://metalists.plexfinance.us/images/bsc/${stakingAddress}.png`} width={24} height={24} alt={stakingSymbol} />
           <Text ml="4px" bold>
             {stakingSymbol}
           </Text>

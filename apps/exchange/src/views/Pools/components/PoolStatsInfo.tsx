@@ -149,7 +149,7 @@ const PoolStatsInfo: React.FC<React.PropsWithChildren<ExpandedFooterProps>> = ({
             tokenAddress={tokenAddress}
             tokenSymbol={earningToken.symbol}
             tokenDecimals={earningToken.decimals}
-            tokenLogo={`https://metalists.plexfinance.us/images/${`${getChainName(chainId)}/`}${tokenAddress}.png`}
+            tokenLogo={`https://metalists.plexfinance.us/images/${`${getChainName(chainId)?.toLowerCase()}/`}${tokenAddress}.png`}
           />
         </Flex>
       )}
