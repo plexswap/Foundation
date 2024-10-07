@@ -228,8 +228,6 @@ export default function PoolPage() {
     return undefined
   }, [liquidity, pool, tickLower, tickUpper])
 
-  const poolAddress = useMemo(() => pool && Pool.getAddress(pool.token0, pool.token1, pool.fee), [pool])
-
   const tickAtLimit = useIsTickAtLimit(feeAmount, tickLower, tickUpper)
 
   const pricesFromPosition = getPriceOrderingFromPositionForUI(position)

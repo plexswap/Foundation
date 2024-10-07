@@ -1,4 +1,3 @@
-import { ChainId } from '@plexswap/chains'
 import { FarmWithStakedValue } from '@plexswap/farms'
 import { useTranslation } from '@plexswap/localization'
 import { AtomBox, Button, Flex, RowBetween, Skeleton, Text } from '@plexswap/ui-plex'

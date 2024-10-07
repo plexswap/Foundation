@@ -5,7 +5,6 @@ import { getFullDecimalMultiplier } from '@plexswap/utils/getFullDecimalMultipli
 import BigNumber from 'bignumber.js'
 import { Dispatch, SetStateAction, memo, useCallback, useMemo } from 'react'
 import { styled } from 'styled-components'
-import { useActiveChainId } from 'hooks/useActiveChainId'
 import { useUserEnoughWayaValidator } from '../hooks/useUserEnoughWayaValidator'
 
 const StyledButton = styled(Button)`
@@ -36,7 +35,7 @@ const BalanceField: React.FC<React.PropsWithChildren<PropsType>> = ({
   needApprove,
 }) => {
   const { t } = useTranslation()
-  const { chainId } = useActiveChainId()
+
   const { userNotEnoughWaya, notEnoughErrorMessage } = useUserEnoughWayaValidator(lockedAmount, stakingTokenBalance)
 
   const percent = useMemo(() => {

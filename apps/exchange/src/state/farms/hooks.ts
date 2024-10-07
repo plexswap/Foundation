@@ -10,14 +10,8 @@ import { useSelector } from 'react-redux'
 import { useAppDispatch } from 'state'
 import { getChiefFarmerContract } from 'utils/contractHelpers'
 
-import { gql } from 'graphql-request'
 import useAccountActiveChain from 'hooks/useAccountActiveChain'
-import { averageArray } from 'hooks/usePoolAvgInfo'
-import mapKeys from 'lodash/mapKeys'
-import mapValues from 'lodash/mapValues'
 import { CoreFarmWithoutStakedValue, ExtendedFarmWithoutStakedValue } from 'state/farms/types'
-import { extendedClients } from 'utils/graphql'
-import { multiQuery } from 'utils/infoQueryHelpers'
 import {
     fetchFarmUserDataAsync,
     fetchFarmsPublicDataAsync,

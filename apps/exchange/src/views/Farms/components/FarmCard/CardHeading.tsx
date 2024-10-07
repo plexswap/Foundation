@@ -1,4 +1,3 @@
-import { ChainId } from '@plexswap/chains'
 import { Token } from '@plexswap/sdk-core'
 import { FarmWidget } from '@plexswap/widgets-internal'
 import { FeeAmount } from '@plexswap/sdk-extended'
@@ -6,7 +5,6 @@ import { AutoRow, FarmMultiplierInfo, Flex, Heading, Skeleton, Tag, useTooltip }
 import { TokenPairImage } from 'components/TokenImage'
 import { styled } from 'styled-components'
 import { Address } from 'viem'
-import { useChainId } from 'wagmi'
 import BoostedTag from '../YieldBooster/components/BoostedTag'
 
 const { StableFarmTag, CoreTag, ExtendedFeeTag } = FarmWidget.Tags
@@ -53,7 +51,6 @@ const CardHeading: React.FC<React.PropsWithChildren<ExpandableSectionProps>> = (
   isBooster,
   wayaWrapperAddress,
 }) => {
-  const chainId = useChainId()
   const isReady = multiplier !== undefined || wayaWrapperAddress
   const multiplierTooltipContent = FarmMultiplierInfo({
     farmWayaPerSecond: farmWayaPerSecond ?? '-',

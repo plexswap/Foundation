@@ -1,6 +1,6 @@
 {
   "name": "@plexswap/wagmi",
-  "version": "3.1.3",
+  "version": "3.1.5",
   "license": "MIT",
   "description": "wagmi adaptor for plexswap",
   "main": "./dist/index.js",

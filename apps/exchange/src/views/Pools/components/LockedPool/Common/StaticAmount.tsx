@@ -2,7 +2,6 @@
 import { BalanceWithLoading, Box, Flex, Image, Text } from '@plexswap/ui-plex'
 import Divider from 'components/Divider'
 import { useTranslation } from '@plexswap/localization'
-import { useActiveChainId } from 'hooks/useActiveChainId'
 import { StaticAmountPropsType } from '../types'
 
 const StaticAmount: React.FC<React.PropsWithChildren<StaticAmountPropsType>> = ({
@@ -12,7 +11,6 @@ const StaticAmount: React.FC<React.PropsWithChildren<StaticAmountPropsType>> = (
   usdValueStaked,
 }) => {
   const { t } = useTranslation()
-  const { chainId } = useActiveChainId()
 
   return (
     <>

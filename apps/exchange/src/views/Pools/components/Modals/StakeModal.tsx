@@ -17,7 +17,6 @@ import { updateUserAllowance, updateUserBalance, updateUserPendingReward, update
 import { usePool } from 'state/pools/hooks'
 import { useApprovePool } from 'views/Pools/hooks/useApprove'
 import { useAccount } from 'wagmi'
-import { ASSET_CDN } from 'config/constants/endpoints'
 import useStakePool from '../../hooks/useStakePool'
 import useUnstakePool from '../../hooks/useUnstakePool'
 

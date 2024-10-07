@@ -1,4 +1,3 @@
-import { ChainId } from '@plexswap/chains'
 import { FarmWithStakedValue, wayaSupportedChainId, coreFarmSupportedChainId, extendedFarmSupportedChainId, filterFarmsByQuery } from '@plexswap/farms'
 import { useIntersectionObserver } from '@plexswap/hooks'
 import { useTranslation } from '@plexswap/localization'

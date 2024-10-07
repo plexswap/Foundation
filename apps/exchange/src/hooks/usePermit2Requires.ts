@@ -18,8 +18,8 @@ export const usePermit2Requires = (amount: CurrencyAmount<Token> | undefined, sp
 
   const requireRevoke = useMemo((): boolean => {
     const isPlexchainUSDP =
-      amount?.currency?.chainId === plexchainTokens.usdp.chainId &&
-      isAddressEqual(amount.currency.address, plexchainTokens.usdp.address)
+      amount?.currency?.chainId === plexchainTokens.usdp.chainId  &&
+       isAddressEqual(amount.currency.address, plexchainTokens.usdp.address)
 
     const isBSCTestNetBUSD =
       amount?.currency?.chainId === bscTestnetTokens.busd.chainId &&
