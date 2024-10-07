@@ -131,15 +131,6 @@ const config = {
           },
         ],
       },
-      {
-        source: 'https://metalists.plexfinance.us/images/:all*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, immutable, max-age=604800',
-          },
-        ],
-      },
     ]
   },
   async redirects() {
@@ -178,12 +169,7 @@ const config = {
         source: '/api/extended/:chainId/farms/liquidity/:address',
         destination: 'https://farms-api.plexfinance.us/extended/:chainId/liquidity/:address',
         permanent: false,
-      },
-      {
-        source: 'https://metalists.plexfinance.us/images/:address',
-        destination: 'https://metalists.plexfinance.us/images/bsc/:address',
-        permanent: false,
-      },
+      }
     ]
   },
   webpack: (webpackConfig, { webpack, isServer }) => {
