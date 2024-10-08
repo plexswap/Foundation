@@ -30,10 +30,10 @@ export const CurrencyLogo: React.FC<
 
   const imagePath = `${chainName?.toLowerCase()}/`
   const checkedsummedAddress = safeGetAddress(address)
-  const srcFromPCS = checkedsummedAddress
+  const srcMetalists = checkedsummedAddress
     ? `https://metalists.plexfinance.us/images/${imagePath}${checkedsummedAddress}.png`
     : ''
-  return <StyledLogo size={size} srcs={src ? [srcFromPCS, src] : [srcFromPCS]} alt="token logo" useFilledIcon {...rest} />
+  return <StyledLogo size={size} srcs={src ? [srcMetalists, src] : [srcMetalists]} alt="token logo" useFilledIcon {...rest} />
 }
 
 const DoubleCurrencyWrapper = styled.div`
