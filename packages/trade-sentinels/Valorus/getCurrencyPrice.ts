@@ -3,7 +3,7 @@ import { ChainId, verifyTestnet } from '@plexswap/chains'
 import { Address } from './types/common'
 
 // LOOKUP //
-const PRICE_API = 'https://wallet-api.pancakeswap.com/v1/prices/list/'
+const PRICE_API = 'https://alpha.wallet-api.pancakeswap.com/v0/prices/list/'
 
 export const zeroAddress = '0x0000000000000000000000000000000000000000' as const
 
