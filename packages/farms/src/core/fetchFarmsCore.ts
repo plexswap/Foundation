@@ -137,8 +137,9 @@ export async function FetchFarmsCore({
   }, new Map<string, CurrencyParams>())
   const tokenInfoList = Array.from(tokensWithoutPrice.values())
 
-  if (tokenInfoList.length) { // LOOKUP ERROR - 141-168
-
+  // LOOKUP ERROR - 141-170
+/*
+  if (tokenInfoList.length) { 
     const prices = await getCurrencyListUsdPrice(tokenInfoList)
 
     return farmsDataWithPrices.map((f) => {
@@ -165,9 +166,8 @@ export async function FetchFarmsCore({
         lpTokenPrice: lpTokenPrice.toString(),
       }
     })
-
   }
-
+*/
   return farmsDataWithPrices
 }
 
