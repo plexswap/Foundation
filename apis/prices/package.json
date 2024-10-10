@@ -1,0 +1,28 @@
+{
+  "name": "crypto-price-fetcher",
+  "version": "1.0.1",
+  "description": "Cloudflare Pages TypeScript project to fetch cryptocurrency prices from CoinMarketCap.",
+  "main": "src/index.ts",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "wrangler dev",
+    "publish:wrangler": "wrangler publish"
+  },
+  "dependencies": {
+    "@plexswap/chains": "workspace:*",
+    "@plexswap/tokens": "workspace:*",
+    "@plexswap/worker-utils": "workspace:*",
+    "axios": "^1.4.0",
+    "itty-router": "^2.6.1",
+    "itty-router-extras": "^0.4.2"
+  },
+  "devDependencies": {
+    "@types/itty-router-extras": "^0.4.0",
+    "@plexswap/tsconfig": "workspace:*",
+    "@cloudflare/workers-types": "^3.10.0",
+    "@types/node": "^15.12.2",
+    "typescript": "5.2.2",
+    "wrangler": "3.78.11"
+  }
+}

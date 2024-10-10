@@ -138,7 +138,7 @@ export async function FetchFarmsCore({
   const tokenInfoList = Array.from(tokensWithoutPrice.values())
 
   // LOOKUP ERROR - 141-170
-/*
+
   if (tokenInfoList.length) { 
     const prices = await getCurrencyListUsdPrice(tokenInfoList)
 
@@ -167,7 +167,7 @@ export async function FetchFarmsCore({
       }
     })
   }
-*/
+
   return farmsDataWithPrices
 }
 

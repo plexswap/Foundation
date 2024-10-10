@@ -443,7 +443,7 @@ export const fetchTokenUSDValues = async (currencies: Currency[] = []): Promise<
   }
 
   // LOOKUP ERROR - 446/455
-/*
+
   if (currencies.length > 0) {
     const prices = await getCurrencyListUsdPrice(currencies)
 
@@ -452,7 +452,7 @@ export const fetchTokenUSDValues = async (currencies: Currency[] = []): Promise<
       commonTokenUSDValue[getAddress(address)] = value.toString()
     })
   }
-*/
+
   return commonTokenUSDValue
 }
 
