@@ -56,8 +56,8 @@ function getRequestUrl(params?: CurrencyParams | CurrencyParams[]): string | und
   if (!key) {
     return undefined
   }
-  const encodedKey = encodeURIComponent(key)
-  return `${PRICE_API}${encodedKey}`
+  // const encodedKey = encodeURIComponent(key) 
+  return `${PRICE_API}${key}`
 }
 
 export async function getCurrencyUsdPrice(currencyParams?: CurrencyParams, options?: RequestInit) {
